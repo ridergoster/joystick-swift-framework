@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EF83EF321E4F721300D689AE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF83EF311E4F721300D689AE /* AppDelegate.swift */; };
+		EF83EF341E4F721300D689AE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF83EF331E4F721300D689AE /* ViewController.swift */; };
+		EF83EF371E4F721300D689AE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF83EF351E4F721300D689AE /* Main.storyboard */; };
+		EF83EF391E4F721300D689AE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF83EF381E4F721300D689AE /* Assets.xcassets */; };
+		EF83EF3C1E4F721300D689AE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF83EF3A1E4F721300D689AE /* LaunchScreen.storyboard */; };
 		EFABF16C1E4F588E00C62FAC /* FWJoystick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFABF1621E4F588E00C62FAC /* FWJoystick.framework */; };
 		EFABF1711E4F588E00C62FAC /* FWJoystickTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFABF1701E4F588E00C62FAC /* FWJoystickTests.swift */; };
 		EFABF1731E4F588E00C62FAC /* FWJoystick.h in Headers */ = {isa = PBXBuildFile; fileRef = EFABF1651E4F588E00C62FAC /* FWJoystick.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -25,6 +30,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		EF83EF2F1E4F721300D689AE /* FWJoystickExemple.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FWJoystickExemple.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF83EF311E4F721300D689AE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EF83EF331E4F721300D689AE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EF83EF361E4F721300D689AE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EF83EF381E4F721300D689AE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EF83EF3B1E4F721300D689AE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EF83EF3D1E4F721300D689AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EFABF1621E4F588E00C62FAC /* FWJoystick.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FWJoystick.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFABF1651E4F588E00C62FAC /* FWJoystick.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FWJoystick.h; sourceTree = "<group>"; };
 		EFABF1661E4F588E00C62FAC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -35,6 +47,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		EF83EF2C1E4F721300D689AE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		EFABF15E1E4F588E00C62FAC /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -53,11 +72,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EF83EF301E4F721300D689AE /* FWJoystickExemple */ = {
+			isa = PBXGroup;
+			children = (
+				EF83EF311E4F721300D689AE /* AppDelegate.swift */,
+				EF83EF331E4F721300D689AE /* ViewController.swift */,
+				EF83EF351E4F721300D689AE /* Main.storyboard */,
+				EF83EF381E4F721300D689AE /* Assets.xcassets */,
+				EF83EF3A1E4F721300D689AE /* LaunchScreen.storyboard */,
+				EF83EF3D1E4F721300D689AE /* Info.plist */,
+			);
+			path = FWJoystickExemple;
+			sourceTree = "<group>";
+		};
 		EFABF1581E4F588E00C62FAC = {
 			isa = PBXGroup;
 			children = (
 				EFABF1641E4F588E00C62FAC /* FWJoystick */,
 				EFABF16F1E4F588E00C62FAC /* FWJoystickTests */,
+				EF83EF301E4F721300D689AE /* FWJoystickExemple */,
 				EFABF1631E4F588E00C62FAC /* Products */,
 			);
 			sourceTree = "<group>";
@@ -67,6 +100,7 @@
 			children = (
 				EFABF1621E4F588E00C62FAC /* FWJoystick.framework */,
 				EFABF16B1E4F588E00C62FAC /* FWJoystickTests.xctest */,
+				EF83EF2F1E4F721300D689AE /* FWJoystickExemple.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -104,6 +138,23 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		EF83EF2E1E4F721300D689AE /* FWJoystickExemple */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EF83EF3E1E4F721300D689AE /* Build configuration list for PBXNativeTarget "FWJoystickExemple" */;
+			buildPhases = (
+				EF83EF2B1E4F721300D689AE /* Sources */,
+				EF83EF2C1E4F721300D689AE /* Frameworks */,
+				EF83EF2D1E4F721300D689AE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FWJoystickExemple;
+			productName = FWJoystickExemple;
+			productReference = EF83EF2F1E4F721300D689AE /* FWJoystickExemple.app */;
+			productType = "com.apple.product-type.application";
+		};
 		EFABF1611E4F588E00C62FAC /* FWJoystick */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = EFABF1761E4F588E00C62FAC /* Build configuration list for PBXNativeTarget "FWJoystick" */;
@@ -150,6 +201,10 @@
 				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = MOC2;
 				TargetAttributes = {
+					EF83EF2E1E4F721300D689AE = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
 					EFABF1611E4F588E00C62FAC = {
 						CreatedOnToolsVersion = 8.2.1;
 						LastSwiftMigration = 0820;
@@ -167,6 +222,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = EFABF1581E4F588E00C62FAC;
 			productRefGroup = EFABF1631E4F588E00C62FAC /* Products */;
@@ -175,11 +231,22 @@
 			targets = (
 				EFABF1611E4F588E00C62FAC /* FWJoystick */,
 				EFABF16A1E4F588E00C62FAC /* FWJoystickTests */,
+				EF83EF2E1E4F721300D689AE /* FWJoystickExemple */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		EF83EF2D1E4F721300D689AE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF83EF3C1E4F721300D689AE /* LaunchScreen.storyboard in Resources */,
+				EF83EF391E4F721300D689AE /* Assets.xcassets in Resources */,
+				EF83EF371E4F721300D689AE /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		EFABF1601E4F588E00C62FAC /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -197,6 +264,15 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		EF83EF2B1E4F721300D689AE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF83EF341E4F721300D689AE /* ViewController.swift in Sources */,
+				EF83EF321E4F721300D689AE /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		EFABF15D1E4F588E00C62FAC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -224,7 +300,50 @@
 		};
 /* End PBXTargetDependency section */
 
+/* Begin PBXVariantGroup section */
+		EF83EF351E4F721300D689AE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EF83EF361E4F721300D689AE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EF83EF3A1E4F721300D689AE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EF83EF3B1E4F721300D689AE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
+		EF83EF3F1E4F721300D689AE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = FWJoystickExemple/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = esgi.FWJoystickExemple;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		EF83EF401E4F721300D689AE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = FWJoystickExemple/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = esgi.FWJoystickExemple;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
 		EFABF1741E4F588E00C62FAC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -390,6 +509,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		EF83EF3E1E4F721300D689AE /* Build configuration list for PBXNativeTarget "FWJoystickExemple" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF83EF3F1E4F721300D689AE /* Debug */,
+				EF83EF401E4F721300D689AE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		EFABF15C1E4F588E00C62FAC /* Build configuration list for PBXProject "FWJoystick" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -406,6 +533,7 @@
 				EFABF1781E4F588E00C62FAC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EFABF1791E4F588E00C62FAC /* Build configuration list for PBXNativeTarget "FWJoystickTests" */ = {
 			isa = XCConfigurationList;
@@ -414,6 +542,7 @@
 				EFABF17B1E4F588E00C62FAC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
