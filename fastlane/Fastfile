@@ -1,9 +1,12 @@
-lane :scan do
+lane :scanning do
 
   scan(
-    code_coverage: true
+    code_coverage: true,
+    scheme: "FWJoystick"
   )
-  xcov
+  xcov(
+    scheme: "FWJoystick"
+  )
 
 end
 
