@@ -7,19 +7,19 @@
 //
 
 import UIKit
+import FWJoystick
 
 class ViewController: UIViewController {
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        let joystick = FWJoystick()
+        joystick.center = CGPoint(x: view.frame.size.width  / 2,y: view.frame.size.height / 2);
+        view.addSubview(joystick)
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
-
-
 }
-
