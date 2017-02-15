@@ -28,6 +28,20 @@ class FWJoystickExempleUITests: XCTestCase {
         super.tearDown()
     }
     
+    func testJoystickCenter() {
+        // Use recording to get started writing UI tests.
+        // Use XCTAssert and related functions to verify your tests produce the correct results.
+        
+        let joystickElement = app.otherElements["joystick"]
+        joystickElement.coordinate(withNormalizedOffset: CGVector(dx: 0.5, dy: 0.5)).tap()
+        
+        let testLabel = app.textFields["testLabel"]
+        
+        
+        XCTAssertEqual("CENTER",testLabel.value as! String );
+        
+    }
+    
     func testJoystickUp() {
         // Use recording to get started writing UI tests.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
@@ -88,8 +102,7 @@ class FWJoystickExempleUITests: XCTestCase {
     
     func testIsNotTriggered() {
         let joystickElement = app.otherElements["joystick"]
-        joystickElement.coordinate(withNormalizedOffset: CGVector(dx: 0.6, dy: 0.6)).tap()
-        
+        joystickElement.coordinate(withNormalizedOffset: CGVector(dx: 0.5, dy: 0.7)).tap()
         
         let testLabel = app.textFields["testLabel"]
         
@@ -112,6 +125,11 @@ class FWJoystickExempleUITests: XCTestCase {
 
         
         XCTAssertEqual("RIGHT",testLabel.value as! String );
+        
+        joystickElement.coordinate(withNormalizedOffset: CGVector(dx: 0.5, dy: 0.2)).press(forDuration: 3)
+        
+        
+        XCTAssertEqual("UP",testLabel.value as! String );
 
     }
     

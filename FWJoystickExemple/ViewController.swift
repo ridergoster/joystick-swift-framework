@@ -25,13 +25,14 @@ class ViewController: UIViewController {
         joystick.actionHandler = { section in
             switch section {
             case 0:
-                print("LEFT");
-                self.setTextLabel(text: "LEFT")
+                self.setTextLabel(text: "CENTER")
             case 1:
-                self.setTextLabel(text: "UP")
+                self.setTextLabel(text: "LEFT")
             case 2:
-                self.setTextLabel(text: "RIGHT")
+                self.setTextLabel(text: "UP")
             case 3:
+                self.setTextLabel(text: "RIGHT")
+            case 4:
                 self.setTextLabel(text: "DOWN")
             default:
                 break;
