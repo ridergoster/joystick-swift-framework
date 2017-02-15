@@ -28,6 +28,26 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "BF52834F1E549484006331AE"
+               BuildableName = "FWJoystickUITests.xctest"
+               BlueprintName = "FWJoystickUITests"
+               ReferencedContainer = "container:FWJoystick.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "BF52835D1E549F65006331AE"
+               BuildableName = "FWJoystickExempleUITests.xctest"
+               BlueprintName = "FWJoystickExempleUITests"
+               ReferencedContainer = "container:FWJoystick.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
