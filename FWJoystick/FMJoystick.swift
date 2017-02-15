@@ -21,7 +21,8 @@ public class FWJoystick: UIView {
     
     @IBInspectable public var sectionNb: Int = 4 { didSet { setNeedsDisplay() }}
     @IBInspectable public var sectionSize: CGFloat = 0.5 { didSet { setNeedsDisplay() }}
-    
+    @IBInspectable public var centerSize: CGFloat = 0.3 { didSet { setNeedsDisplay() }}
+
     @IBInspectable public var isInAction: Bool = false { didSet { setNeedsDisplay() }}
 
     private var joystickView = UIView(frame: .zero)
@@ -73,21 +74,29 @@ public class FWJoystick: UIView {
             let radius = frame.width / 2
             let touchPoint = touch.location(in: self)
             let position = CGPoint(x: touchPoint.x - (frame.width / 2), y: touchPoint.y - (frame.height / 2))
-            if (sqrt(position.x * position.x + position.y * position.y) < radius) {
+            let distance = sqrt(position.x * position.x + position.y * position.y)
+            if (distance < radius) {
                 joystickView.center = touchPoint
-                
-                let angleSize = 2 * M_PI / Double(sectionNb)
-                var angle = Double(atan2(position.y, position.x)) + 3.14
-                if(sectionNb == 4) {
-                    // ajustement
-                    angle += (3.14 / 4)
-                }
-                let section = Int(Int(angle / angleSize) % sectionNb)
-                print("angle:\(angle)\nSize: \(angleSize)\n Section:\(section)")
-
-                if(sqrt(position.x * position.x + position.y * position.y) > (radius * sectionSize) && !isInAction) {
-                    actionHandler?(section)
-                }
+            } else {
+                let aX = (position.x / distance * frame.height / 2) + (frame.width / 2)
+                let aY = (position.y / distance * frame.height / 2) + (frame.width / 2)
+                joystickView.center = CGPoint(x: aX, y: aY)
+            }
+            
+            let angleSize = 2 * M_PI / Double(sectionNb)
+            var angle = Double(atan2(position.y, position.x)) + 3.14
+            if(sectionNb == 4) {
+                // ajustement
+                angle += (3.14 / 4)
+            }
+            let section = Int(Int(angle / angleSize) % sectionNb)
+            print("angle:\(angle)\nSize: \(angleSize)\n Section:\(section)")
+            
+            if(sqrt(position.x * position.x + position.y * position.y) > (radius * sectionSize) && !isInAction) {
+                actionHandler?(section + 1)
+            }
+            else if(sqrt(position.x * position.x + position.y * position.y) < (radius * centerSize) && !isInAction) {
+                actionHandler?(0)
             }
         }
     }
