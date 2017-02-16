@@ -19,11 +19,11 @@ public class FWJoystick: UIView {
 
     @IBInspectable public var opacity: CGFloat = 1 { didSet { setNeedsDisplay() }}
     
-    @IBInspectable public var sectionNb: Int = 4 { didSet { setNeedsDisplay() }}
-    @IBInspectable public var sectionSize: CGFloat = 0.5 { didSet { setNeedsDisplay() }}
-    @IBInspectable public var centerSize: CGFloat = 0.3 { didSet { setNeedsDisplay() }}
+    @IBInspectable public var sectionNb: Int = 4
+    @IBInspectable public var sectionSize: CGFloat = 0.5
+    @IBInspectable public var centerSize: CGFloat = 0.3
 
-    @IBInspectable public var isInAction: Bool = false { didSet { setNeedsDisplay() }}
+    @IBInspectable public var isInAction: Bool = false
 
     private var joystickView = UIView(frame: .zero)
     
@@ -90,8 +90,7 @@ public class FWJoystick: UIView {
                 angle += (3.14 / 4)
             }
             let section = Int(Int(angle / angleSize) % sectionNb)
-            print("angle:\(angle)\nSize: \(angleSize)\n Section:\(section)")
-            
+
             if(sqrt(position.x * position.x + position.y * position.y) > (radius * sectionSize) && !isInAction) {
                 actionHandler?(section + 1)
             }

@@ -11,29 +11,48 @@ import FWJoystick
 
 class ViewController: UIViewController {
     
+    var label: UITextField?;
+    let joystick = FWJoystick();
+
     override func viewDidLoad() {
         super.viewDidLoad()
+        label =  UITextField(frame: CGRect(x: 0, y: 0, width: 200, height: 21))
+        label?.textColor = UIColor.blue
+        label?.textAlignment = NSTextAlignment.center
+        label?.text = "Hello"
+        label?.accessibilityLabel = "testLabel";
         
-        let joystick = FWJoystick()
         joystick.actionHandler = { section in
             switch section {
             case 0:
-                print("LEFT")
+                self.setTextLabel(text: "CENTER")
             case 1:
-                print("UP")
+                self.setTextLabel(text: "LEFT")
             case 2:
-                print("RIGHT")
+                self.setTextLabel(text: "UP")
             case 3:
-                print("DOWN")
+                self.setTextLabel(text: "RIGHT")
+            case 4:
+                self.setTextLabel(text: "DOWN")
             default:
                 break;
-                
             }
         }
         joystick.center = CGPoint(x: view.frame.size.width  / 2,y: view.frame.size.height / 2);
+        joystick.accessibilityLabel = "joystick";
+        label?.center = CGPoint(x: 100 ,y: 100);
+        view.addSubview(label!);
         view.addSubview(joystick)
     }
 
+    func setTextLabel(text: String){
+        joystick.isInAction = true;
+        label?.text = text;
+        DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(3), execute: {
+            self.joystick.isInAction = false;
+        })
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }

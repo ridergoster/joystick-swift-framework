@@ -2,10 +2,10 @@ lane :scanning do
 
   scan(
     code_coverage: true,
-    scheme: "FWJoystick"
+    scheme: "FWJoystickExemple"
   )
   xcov(
-    scheme: "FWJoystick"
+    scheme: "FWJoystickExemple"
   )
 
 end

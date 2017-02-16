@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BF5283611E549F65006331AE /* FWJoystickExempleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5283601E549F65006331AE /* FWJoystickExempleUITests.swift */; };
+		BF5283681E54A093006331AE /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BF5283621E549F65006331AE /* Info.plist */; };
 		EF83EF321E4F721300D689AE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF83EF311E4F721300D689AE /* AppDelegate.swift */; };
 		EF83EF341E4F721300D689AE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF83EF331E4F721300D689AE /* ViewController.swift */; };
 		EF83EF371E4F721300D689AE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF83EF351E4F721300D689AE /* Main.storyboard */; };
@@ -21,6 +23,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		BF5283631E549F65006331AE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EFABF1591E4F588E00C62FAC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EF83EF2E1E4F721300D689AE;
+			remoteInfo = FWJoystickExemple;
+		};
 		EF83EF4B1E4F973A00D689AE /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = EFABF1591E4F588E00C62FAC /* Project object */;
@@ -52,6 +61,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		BF52835E1E549F65006331AE /* FWJoystickExempleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FWJoystickExempleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF5283601E549F65006331AE /* FWJoystickExempleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FWJoystickExempleUITests.swift; sourceTree = "<group>"; };
+		BF5283621E549F65006331AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EF83EF2F1E4F721300D689AE /* FWJoystickExemple.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FWJoystickExemple.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF83EF311E4F721300D689AE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EF83EF331E4F721300D689AE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -69,6 +81,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		BF52835B1E549F65006331AE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		EF83EF2C1E4F721300D689AE /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -95,6 +114,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BF52835F1E549F65006331AE /* FWJoystickExempleUITests */ = {
+			isa = PBXGroup;
+			children = (
+				BF5283601E549F65006331AE /* FWJoystickExempleUITests.swift */,
+				BF5283621E549F65006331AE /* Info.plist */,
+			);
+			path = FWJoystickExempleUITests;
+			sourceTree = "<group>";
+		};
 		EF83EF301E4F721300D689AE /* FWJoystickExemple */ = {
 			isa = PBXGroup;
 			children = (
@@ -114,6 +142,7 @@
 				EFABF1641E4F588E00C62FAC /* FWJoystick */,
 				EFABF16F1E4F588E00C62FAC /* FWJoystickTests */,
 				EF83EF301E4F721300D689AE /* FWJoystickExemple */,
+				BF52835F1E549F65006331AE /* FWJoystickExempleUITests */,
 				EFABF1631E4F588E00C62FAC /* Products */,
 			);
 			sourceTree = "<group>";
@@ -124,6 +153,7 @@
 				EFABF1621E4F588E00C62FAC /* FWJoystick.framework */,
 				EFABF16B1E4F588E00C62FAC /* FWJoystickTests.xctest */,
 				EF83EF2F1E4F721300D689AE /* FWJoystickExemple.app */,
+				BF52835E1E549F65006331AE /* FWJoystickExempleUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -161,6 +191,24 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		BF52835D1E549F65006331AE /* FWJoystickExempleUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BF5283651E549F65006331AE /* Build configuration list for PBXNativeTarget "FWJoystickExempleUITests" */;
+			buildPhases = (
+				BF52835A1E549F65006331AE /* Sources */,
+				BF52835B1E549F65006331AE /* Frameworks */,
+				BF52835C1E549F65006331AE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BF5283641E549F65006331AE /* PBXTargetDependency */,
+			);
+			name = FWJoystickExempleUITests;
+			productName = FWJoystickExempleUITests;
+			productReference = BF52835E1E549F65006331AE /* FWJoystickExempleUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 		EF83EF2E1E4F721300D689AE /* FWJoystickExemple */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = EF83EF3E1E4F721300D689AE /* Build configuration list for PBXNativeTarget "FWJoystickExemple" */;
@@ -226,6 +274,11 @@
 				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = MOC2;
 				TargetAttributes = {
+					BF52835D1E549F65006331AE = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = EF83EF2E1E4F721300D689AE;
+					};
 					EF83EF2E1E4F721300D689AE = {
 						CreatedOnToolsVersion = 8.2.1;
 						ProvisioningStyle = Automatic;
@@ -257,11 +310,20 @@
 				EFABF1611E4F588E00C62FAC /* FWJoystick */,
 				EFABF16A1E4F588E00C62FAC /* FWJoystickTests */,
 				EF83EF2E1E4F721300D689AE /* FWJoystickExemple */,
+				BF52835D1E549F65006331AE /* FWJoystickExempleUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		BF52835C1E549F65006331AE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF5283681E54A093006331AE /* Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		EF83EF2D1E4F721300D689AE /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -289,6 +351,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		BF52835A1E549F65006331AE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF5283611E549F65006331AE /* FWJoystickExempleUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		EF83EF2B1E4F721300D689AE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -317,6 +387,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		BF5283641E549F65006331AE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EF83EF2E1E4F721300D689AE /* FWJoystickExemple */;
+			targetProxy = BF5283631E549F65006331AE /* PBXContainerItemProxy */;
+		};
 		EF83EF4C1E4F973A00D689AE /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = EFABF1611E4F588E00C62FAC /* FWJoystick */;
@@ -349,6 +424,30 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		BF5283661E549F65006331AE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = FWJoystickExempleUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.keuwa.FWJoystickExempleUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = FWJoystickExemple;
+			};
+			name = Debug;
+		};
+		BF5283671E549F65006331AE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = FWJoystickExempleUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.keuwa.FWJoystickExempleUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = FWJoystickExemple;
+			};
+			name = Release;
+		};
 		EF83EF3F1E4F721300D689AE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -540,6 +639,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		BF5283651E549F65006331AE /* Build configuration list for PBXNativeTarget "FWJoystickExempleUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF5283661E549F65006331AE /* Debug */,
+				BF5283671E549F65006331AE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		EF83EF3E1E4F721300D689AE /* Build configuration list for PBXNativeTarget "FWJoystickExemple" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
