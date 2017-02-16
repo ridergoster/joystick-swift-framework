@@ -6,8 +6,7 @@ lane :scanning do
     device: "iPhone 5s (9.0)"
   )
   xcov(
-    scheme: "FWJoystickExemple",
-    device: "iPhone 5s (9.0)"
+    scheme: "FWJoystickExemple"
   )
 
 end
