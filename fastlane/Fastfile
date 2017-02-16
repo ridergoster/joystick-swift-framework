@@ -2,10 +2,12 @@ lane :scanning do
 
   scan(
     code_coverage: true,
-    scheme: "FWJoystickExemple"
+    scheme: "FWJoystickExemple",
+    device: "iPhone 5s (9.0)"
   )
   xcov(
-    scheme: "FWJoystickExemple"
+    scheme: "FWJoystickExemple",
+    device: "iPhone 5s (9.0)"
   )
 
 end
