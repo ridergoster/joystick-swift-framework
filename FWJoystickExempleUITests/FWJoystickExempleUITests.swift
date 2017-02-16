@@ -126,7 +126,9 @@ class FWJoystickExempleUITests: XCTestCase {
         
         XCTAssertEqual("RIGHT",testLabel.value as! String );
         
-        joystickElement.coordinate(withNormalizedOffset: CGVector(dx: 0.5, dy: 0.2)).press(forDuration: 3)
+        sleep(3)
+        
+        joystickElement.coordinate(withNormalizedOffset: CGVector(dx: 0.5, dy: 0.2)).tap()
         
         
         XCTAssertEqual("UP",testLabel.value as! String );

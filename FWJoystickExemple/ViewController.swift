@@ -48,13 +48,9 @@ class ViewController: UIViewController {
     func setTextLabel(text: String){
         joystick.isInAction = true;
         label?.text = text;
-        setTimeout(delay: 2, block: { () -> Void in
-            // do this stuff after 0.35 seconds
+        DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(3), execute: {
             self.joystick.isInAction = false;
         })
-    }
-    func setTimeout(delay:TimeInterval, block:@escaping ()->Void) -> Timer {
-        return Timer.scheduledTimer(timeInterval: delay, target: BlockOperation(block: block), selector: #selector(Operation.main), userInfo: nil, repeats: false)
     }
     
     override func didReceiveMemoryWarning() {
